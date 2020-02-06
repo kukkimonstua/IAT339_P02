@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>The Smudger - Style Guide</title>
+
+  <link href="css/main.css" rel="stylesheet">
+
+</head>
+<!-- https://www.w3schools.com/howto/howto_css_checkout_form.asp -->
+
+<body>
+  <section>
+    <header>
+      <h1>Checkout</h1>
+    </header>
+  </section>
+
+  <section class="nav">
+    <nav>
+      <a class="button" href="http://www.sfu.ca/~eychow/index.html">StyleGuide</a>
+      <a class="button" href="http://www.sfu.ca/~eychow/Services.html">Services</a>
+      <a class="button" id="focused" href="http://www.sfu.ca/~eychow/Checkout.html">Checkout</a>
+      <a class="button" href="http://www.sfu.ca/~eychow/references.html">References</a>
+    </nav>
+  </section>
+
+  <div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form action="/action_page.php">
+
+          <div class="row">
+            <div class="col-50">
+              <h3>Billing Address</h3>
+              <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Ash Ketchum">
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+              <input type="text" id="email" name="email" placeholder="pika@example.com">
+              <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+              <input type="text" id="adr" name="address" placeholder="1234 Pallet Town">
+              <label for="city"><i class="fa fa-institution"></i> City</label>
+              <input type="text" id="city" name="city" placeholder="Pallet Town">
+
+              <div class="row">
+                <div class="col-50">
+                  <label for="province">Province</label>
+                  <input type="text" id="province" name="province" placeholder="Kanto">
+                </div>
+                <div class="col-50">
+                  <label for="zipcode">Zipcode</label>
+                  <input type="text" id="zipcode" name="zipcode" placeholder="V1PLO8">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-50">
+              <h3>Payment</h3>
+              <label for="fname">Accepted Payments</label>
+              <form action="index.html" class="cusInput">
+                <input type="radio" name="payment" value="credit_card" checked>
+                <label class="credit_card">Credit Card</label><br>
+                <input type="radio" name="payment" value="paypal">
+                <label class="paypal">Paypal</label><br>
+              </form>
+              <label for="cname">Name on Card</label>
+              <input type="text" id="cname" name="cardname" placeholder="Pikachu">
+              <label for="ccnum">Credit card number</label>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+              <label for="expmonth">Expiry Month</label>
+              <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+              <div class="row">
+                <div class="col-50">
+                  <label for="expyear">Expiry Year</label>
+                  <input type="text" id="expyear" name="expyear" placeholder="2025">
+                </div>
+                <div class="col-50">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="123">
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          </label>
+          <input type="submit" value="Continue to checkout" class="btn">
+        </form>
+      </div>
+    </div>
+
+    <div class="col-25">
+      <div class="container">
+        <h4>Cart
+          <span class="price" style="color:black">
+            <i class="fa fa-shopping-cart"></i>
+            <b>2 Items</b>
+          </span>
+        </h4>
+        <p><a href="img/crystal.png">Crystal Clear</a> </p>
+        <p><img class="product-image" src="img/crystal.png" alt="Crystal">
+          <span class="price">$80</span></p>
+        <p><a href="img/crystal.png">The Bath </a> </p>
+        <p><img class="product-image" src="img/bath.png" alt="Bath">
+          <span class="price">$130</span></p>
+        <hr>
+        <p>Total <span class="price" style="color:black"><b>$210</b></span></p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
