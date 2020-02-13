@@ -53,7 +53,7 @@ p {
 }
 
 img {
-	max-width: 100%;
+	max-width: 15em;
 }
 
 /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
@@ -374,7 +374,9 @@ a img:hover {
 	float:left;
 	background-color: rgb(164, 245, 238, 0.2);
 }
-
+#tableofcontentsstyling img {
+  max-width: auto;
+}
 #title h1{
 	font-size:2em;
 	/* margin:-1rem; */
