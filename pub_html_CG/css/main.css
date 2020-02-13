@@ -9,12 +9,30 @@ body {
   /* https://www.w3schools.com/howto/howto_css_center_website.asp */
 }
 
-section {
-  padding: 1em;
+#title {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 100%;
+  align-items: baseline;
+  text-align: center;
+  margin-top: -2em;
+  margin-bottom: 1em;
+  border-bottom: solid 1px #dedddc;
+  padding-bottom: 10px;
+}
+
+#logo {
+  padding-right: 1em;
+}
+
+header h5 {
+  padding-right: 2em;
+  font-size: 1.2em;
 }
 
 h1 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   font-size: 2.2rem;
 }
 
@@ -35,6 +53,7 @@ h3 {
 h4 {
   margin-left: 0.1em;
   margin-bottom: 0.25rem;
+  font-size: 1.2rem;
 }
 
 hr {
@@ -53,7 +72,7 @@ p {
 }
 
 img {
-	max-width: 15em;
+  max-width: 15em;
 }
 
 /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
@@ -89,27 +108,6 @@ img {
   max-width: 100%;
   margin-left: 1em;
   margin-right: 1em;
-}
-
-.product-price p {
-  color: grey;
-  font-size: 22px;
-}
-
-.services_list button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.services_list button:hover {
-  opacity: 0.7;
 }
 
 button, button a {
@@ -184,9 +182,11 @@ button:hover {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-#radio li{
+
+form li {
   list-style-type: none;
 }
+
 /* Text box input field */
 /* https://www.w3schools.com/css/css_form.asp*/
 input[type=text] {
@@ -264,6 +264,10 @@ input[type=search] {
   cursor: pointer;
 }
 
+.button:active {
+  background-color: rgb(48, 179, 169);
+}
+
 #focused {
   background-color: #AB9993;
 }
@@ -314,6 +318,7 @@ a img:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .blocks {
@@ -357,128 +362,132 @@ a img:hover {
 }
 
 /*IDs*/
-
-#productbrowsingpage{
-	display:flex;
-	flex-wrap:wrap;
-	flex-direction:row;
-	max-width:100%;
-	justify-content:flex-start;
+#productbrowsingpage {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 100%;
+  justify-content: flex-start;
 }
 
-#tableofcontentsstyling{
-	margin:.5em;
-	padding:1em;
-	border:5px solid rgb(171, 153, 147, 0.1);
+#tableofcontentsstyling {
+  margin: .5em;
+  padding: 1em;
+  border: 5px solid rgb(171, 153, 147, 0.1);
   border-radius: 10px;
-	float:left;
-	background-color: rgb(164, 245, 238, 0.2);
+  float: left;
+  background-color: rgb(164, 245, 238, 0.2);
 }
+
 #tableofcontentsstyling img {
   max-width: auto;
 }
-#title h1{
-	font-size:2em;
-	/* margin:-1rem; */
+
+#title h1 {
+  font-size: 2em;
+  /* margin:-1rem; */
 }
 
-#styleguide div{
-	padding-bottom: 2rem;
+#styleguide div {
+  padding-bottom: 2rem;
   border-top-width: 0.15rem;
   border-top-style: solid;
   border-top-color: black;
 }
 
-#cardinfo{
-	display:block;
+#cardinfo {
+  display: block;
 }
 
 /*classes*/
-
-.container #addressinfo, .container #cardinfo{
-	border: 5px groove white;
-	padding:1em;
-	margin:1em;
+.container #addressinfo, .container #cardinfo {
+  border: 5px groove white;
+  flex-basis: 100em;
+  padding: 1em;
+  margin: 1em;
 }
 
-.container{
-	display:flex;
-	flex-wrap:wrap;
-	flex-direction:row;
-	max-width:100%;
-	justify-content:flex-start;
-	  background-color: #f2f2f2;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-basis: 15em;
+  max-width: 100%;
+  justify-content: flex-start;
   padding: 5px 20px 15px 20px;
-  border: 1px solid lightgrey;
-  border-radius: 3px;
+  /* background-color: #f2f2f2; */
+  /* border: 1px solid lightgrey; */
+  /* border-radius: 3px; */
 }
 
-.container #tableofcontents{
-	flex-basis:25em;
-	flex-grow:1;
-	justify-content:flex-start;
-	max-width:25em;
-	transition-property: background-color;
-	transition-duration: 0.5s;
+.container #tableofcontents {
+  flex-basis: 25em;
+  flex-grow: 1;
+  justify-content: flex-start;
+  max-width: 25em;
+  transition-property: background-color;
+  transition-duration: 0.5s;
 }
 
-
-.container #styleguide{
-	flex-basis:15em;
-	flex-grow:1;
-	justify-content:flex-start;
-	margin:.5em;
-	margin-left:3em;
-	padding:1em;
-
+.container #styleguide {
+  flex-basis: 15em;
+  flex-grow: 1;
+  justify-content: flex-start;
+  margin: .5em;
+  margin-left: 3em;
+  padding: 1em;
 }
 
-.fas fa-grip-lines-vertical{
-	color:black;
-}
-.fa-quote-left, .fa-quote-right{
-	padding:5px;
+.fas fa-grip-lines-vertical {
+  color: black;
 }
 
-.item{
-	text-align:center;
-	background: rgb(255,255,255);
-	background: radial-gradient(circle, rgba(255,255,255,1) 65%, rgba(200, 254, 247, 0.5) 100%);
-	padding:.5em;
-	max-width:500px;
-	margin:.5em;
+.fa-quote-left, .fa-quote-right {
+  padding: 5px;
+}
+
+.item {
+  text-align: center;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 65%, rgba(200, 254, 247, 0.5) 100%);
+  padding: .5em;
+  max-width: 500px;
+  margin: .5em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-width: 4px;
-	border-color: #97F5E7;
+  border-color: #97F5E7;
   border-radius: 10px;
   border-style: solid;
 }
 
-.item img{
-	border:1px solid black;
+.item img {
+  border: 1px solid black;
 }
 
-.item p{
-	max-width:500px;
+.item p {
+  max-width: 500px;
 }
 
-.quantity{
-	text-align:center;
+.quantity {
+  text-align: center;
 }
 
-.cart{
-	cursor:pointer;
-	background-color: #6a8c4b;
-	padding:.5em;
-	color:white;
-	text-decoration:none;
+.cart {
+  border: none;
+  outline: 0;
+  padding: 10px;
+  color: white;
+  background-color: rgb(48, 179, 169);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
 }
 
-.cart:hover{
-	color: white;
-	text-decoration:underline;
+.cart:hover {
+  color: white;
+  text-decoration: underline;
 }
-
 
 /* Checkout */
 /* https://www.w3schools.com/howto/howto_css_checkout_form.asp */
@@ -515,6 +524,7 @@ a img:hover {
 .col-75 {
   padding: 0 16px;
 }
+
 label {
   margin-bottom: 10px;
   display: block;

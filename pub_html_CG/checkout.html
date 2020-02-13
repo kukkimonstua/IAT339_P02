@@ -1,97 +1,103 @@
 <!doctype html>
 <html>
-  <head>
-  	<meta charset="utf-8">
-	<title>Checkout Form</title>
-    <!-- Icons for the website from fontawesome.com, to use icons such as credit cards, address cards, etc -->
-    <script src="https://kit.fontawesome.com/38b79869b2.js" crossorigin="anonymous"></script>
-	<!--link css page-->
-	<link href="css/main.css" rel="stylesheet">
-	<!--link to google fonts-->
-	<!--the font files themselves are also in the fonts folder, as reference-->
-	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Checkout Form</title>
+  <!-- Icons for the website from fontawesome.com, to use icons such as credit cards, address cards, etc -->
+  <script src="https://kit.fontawesome.com/38b79869b2.js" crossorigin="anonymous"></script>
+  <!--link css page-->
+  <link href="css/main.css" rel="stylesheet">
+  <!--link to google fonts-->
+  <!--the font files themselves are also in the fonts folder, as reference-->
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+</head>
+
+<body>
   <header id="title">
-				<!--Title of page-->
-				<h1>Cascading Sheets</h1>
-				<!--navigation between pages-->
-        <nav class="navigation">
-					<a class="button" href="index.html">Style Guide Webpage</a>
-					<!-- <i class="fas fa-grip-lines-vertical"></i> -->
-					<a class="button" href="products.html">Product Listing Webpage</a>
-					<!-- <i class="fas fa-grip-lines-vertical"></i> -->
-					<a class="button" href="checkout.html">Checkout Webpage</a>
-				</nav>
-			</header>
-   <section>
-			<div class="container" id="payment">
-								  <form>
-									<div id="addressinfo">
-										<h3>Billing Address</h3>
-											<p>
-											<label><i class="fas fa-user"></i> Full Name: </label>
-												<input type="text" placeholder="First Name Last Name">
-											<label><i class="fas fa-envelope"></i> Email: </label>
-												<input type="text" placeholder="name@example.ca">
-											</p>
-											<p>
-											<label><i class="fas fa-address-book"></i> Address: </label>
-												<input type="text">
-											<label><i class="fas fa-city"></i> City: </label>
-												<input type="text">
-											</p>
-											<p>
-											<label><i class="fab fa-canadian-maple-leaf"></i> Province: </label>
-												<input type="text">
-											<label><i class="fas fa-ellipsis-h"></i><i class="fas fa-ellipsis-h"></i> Postal Code: </label>
-												<input type="text" >
-											</p>
-											<p>
-											<label><i class="fas fa-phone-square"></i> Phone: </label>
-												<input type="text" >
-											</p>
-										</div>
-										<div id="cardinfo">
-											<p>
-											<h3>Payment</h3>
-											<div class="icon-container">
-											<label>Accepted Cards: </label>
-												<i class="fab fa-cc-visa"></i>
-												<i class="fab fa-cc-amex"></i>
-												<i class="fab fa-cc-mastercard"></i>
-												<i class="fab fa-cc-paypal"></i>
-											</div>
-											<p>
-											<label>Name on Card: </label>
-												<input type="text">
-											</p>
-											<p>
-											<label>Credit card number: </label>
-												<input type="text" placeholder="XXXX-XXXX-XXXX-XXXX">
-											<label>Exp Month/Year: </label>
-												<input type="text" placeholder="MMYY">
-											</p>
-											<p>
-											<label>CVV: </label>
-												<input type="text">
-											</p>
-										<input type="radio" checked="checked" name="sameadr"> Shipping address same as billing<br>
-										<input type="radio">Subscribe to emails Recieve email offers from Stylish Sheets, including upcoming promotions, new products in store, and more!<br>
-									<button type = "submit" value="Submit">Purchase!</button>
-											</div>
-										</div>
-								  </form>
-								</div>
-									<div id="checkout">
-									<h3>Checkout Cart</h3>
-										<h4><i class="fas fa-shopping-cart"></i> Cart: 4</h4>
-										<p><a href="#">Watercolour Peony Paper: </a>$15</p>
-										<p><a href="#">Feather Pens Pack: </a>$5</p>
-									<p>Total: <strong>$20</strong></p>
-									<button type = "submit" value="Submit">Continue To Checkout! <i class="fas fa-shopping-cart"></i></button>
-							</div>
-				</section>
-  </body>
+    <!--Title of page-->
+    <div id="logo">
+      <h4>Cascading Sheets</h4>
+    </div>
+    <!--navigation between pages-->
+    <nav class="navigation">
+      <a class="button" href="index.html">Style Guide Webpage</a>
+      <!-- <i class="fas fa-grip-lines-vertical"></i> -->
+      <a class="button" href="products.html">Product Listing Webpage</a>
+      <!-- <i class="fas fa-grip-lines-vertical"></i> -->
+      <a class="button" href="checkout.html">Checkout Webpage</a>
+    </nav>
+  </header>
+  <section>
+    <div class="container" id="payment">
+      <form action="index.html" class="cusInput">
+        <div id="addressinfo">
+          <h3>Billing Address</h3>
+          <p>
+            <label><i class="fas fa-user"></i> Full Name: </label>
+            <input type="text" placeholder="First Name Last Name">
+            <label><i class="fas fa-envelope"></i> Email: </label>
+            <input type="text" placeholder="name@example.ca">
+          </p>
+          <p>
+            <label><i class="fas fa-address-book"></i> Address: </label>
+            <input type="text">
+            <label><i class="fas fa-city"></i> City: </label>
+            <input type="text">
+          </p>
+          <p>
+            <label><i class="fab fa-canadian-maple-leaf"></i> Province: </label>
+            <input type="text">
+            <label><i class="fas fa-ellipsis-h"></i><i class="fas fa-ellipsis-h"></i> Postal Code: </label>
+            <input type="text">
+          </p>
+          <p>
+            <label><i class="fas fa-phone-square"></i> Phone: </label>
+            <input type="text">
+          </p>
+        </div>
+        <div id="cardinfo">
+          <p>
+            <h3>Payment</h3>
+            <div class="icon-container">
+              <label>Accepted Cards: </label>
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-amex"></i>
+              <i class="fab fa-cc-mastercard"></i>
+              <i class="fab fa-cc-paypal"></i>
+            </div>
+            <p>
+              <label>Name on Card: </label>
+              <input type="text">
+            </p>
+            <p>
+              <label>Credit card number: </label>
+              <input type="text" placeholder="XXXX-XXXX-XXXX-XXXX">
+              <label>Exp Month/Year: </label>
+              <input type="text" placeholder="MMYY">
+            </p>
+            <p>
+              <label>CVV: </label>
+              <input type="text">
+            </p>
+            <li><input type="radio" id="same-address" value="address" checked="checked" name="sameadr">
+              <label for="same-address"> Shipping address same as billing</label></li>
+            <li><input type="radio" id="subscribe" value="address">
+              <label for="subscribe"> Subscribe to emails Recieve email offers from Stylish Sheets, including upcoming promotions, new products in store, and more!</label></li>
+            <button type="submit" value="Submit">Purchase!</button>
+        </div>
+    </div>
+    </form>
+    </div>
+    <div id="checkout">
+      <h3>Checkout Cart</h3>
+      <h4><i class="fas fa-shopping-cart"></i> Cart: 4</h4>
+      <p><a href="#">Watercolour Peony Paper: </a>$15</p>
+      <p><a href="#">Feather Pens Pack: </a>$5</p>
+      <p>Total: <strong>$20</strong></p>
+      <button type="submit" value="Submit">Continue To Checkout! <i class="fas fa-shopping-cart"></i></button>
+    </div>
+  </section>
+</body>
+
 </html>

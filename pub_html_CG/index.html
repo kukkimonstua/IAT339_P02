@@ -13,6 +13,20 @@
   </head>
   <body>
     <!--Top of the body-->
+    <header id="title">
+      <!--Title of page-->
+      <div id="logo">
+        <h4>Cascading Sheets</h4>
+      </div>
+      <!--navigation between pages-->
+      <nav class="navigation">
+        <a class="button" href="index.html">Style Guide Webpage</a>
+        <!-- <i class="fas fa-grip-lines-vertical"></i> -->
+        <a class="button" href="products.html">Product Listing Webpage</a>
+        <!-- <i class="fas fa-grip-lines-vertical"></i> -->
+        <a class="button" href="checkout.html">Checkout Webpage</a>
+      </nav>
+    </header>
 		<!--left side of page for each part of the style guide, static-->
 		<div class="container">
 			<div id="tableofcontents" class="in-text_links">
@@ -64,18 +78,7 @@
 			</div>
 			<!--Top of the style guide-->
 			<div id="styleguide">
-			<header id="title">
-				<!--Title of page-->
-				<h1>Cascading Sheets</h1>
-				<!--navigation between pages-->
-				<nav class="navigation">
-					<a class="button" href="index.html">Style Guide Webpage</a>
-					<!-- <i class="fas fa-grip-lines-vertical"></i> -->
-					<a class="button" href="products.html">Product Listing Webpage</a>
-					<!-- <i class="fas fa-grip-lines-vertical"></i> -->
-					<a class="button" href="checkout.html">Checkout Webpage</a>
-				</nav>
-			</header>
+
 			<!--right side of page for each part of the style guide, continues to the bottom-->
 				<section id="basicstyleguide">
 					<h1>BASIC STYLE GUIDE ELEMENTS</h1>
@@ -137,10 +140,10 @@
 						<h2>RADIO BUTTONS</h2>
 								<p>
                   <form action="index.html" class="cusInput">
-                    <li><input type="radio" name="Example" value="ex1" checked>
-                    <label for="male">Example 1</label> </li>
-                    <li><input type="radio" name="Example" value="ex2">
-                    <label for="female">Example 2</label></li>
+                    <li><input type="radio" name="example" id="ex1" value="ex1" checked>
+                    <label for="ex1">Example 1</label> </li>
+                    <li><input type="radio" name="example" id="ex2" value="ex2">
+                    <label for="ex2">Example 2</label></li>
 									</p>
 					</div>
 					<div id="image">
@@ -225,10 +228,10 @@
 						</div>
 							<div class="container" id="payment">
 								  <form>
-								  <h3>Address Form</h3>
 									<div id="addressinfo">
 										<h3>Billing Address</h3>
-											<p>
+                    <div>
+                      <p>
 											<label><i class="fas fa-user"></i> Full Name: </label>
 												<input type="text" placeholder="First Name Last Name">
 											<label><i class="fas fa-envelope"></i> Email: </label>
@@ -251,47 +254,42 @@
 												<input type="text" >
 											</p>
 										</div>
-								<div class="container">
-									<h3>Payment Form</h3>
+                  </div>
 										<div id="cardinfo">
 											<p>
-											<h3>Payment</h3>
-											<div class="icon-container">
-											<label>Accepted Cards: </label>
-												<i class="fab fa-cc-visa"></i>
-												<i class="fab fa-cc-amex"></i>
-												<i class="fab fa-cc-mastercard"></i>
-												<i class="fab fa-cc-paypal"></i>
-											</div>
-											<p>
-											<label>Name on Card: </label>
-												<input type="text">
-											</p>
-											<p>
-											<label>Credit card number: </label>
-												<input type="text" placeholder="XXXX-XXXX-XXXX-XXXX">
-											<label>Exp Month/Year: </label>
-												<input type="text" placeholder="MMYY">
-											</p>
-											<p>
-											<label>CVV: </label>
-												<input type="text">
-											</p>
+                        <h3>Payment</h3>
+  											<div class="icon-container">
+  											<label>Accepted Cards: </label>
+  												<i class="fab fa-cc-visa"></i>
+  												<i class="fab fa-cc-amex"></i>
+  												<i class="fab fa-cc-mastercard"></i>
+  												<i class="fab fa-cc-paypal"></i>
+  											</div>
+  											<p>
+  											<label>Name on Card: </label>
+  												<input type="text">
+  											</p>
+  											<p>
+  											<label>Credit card number: </label>
+  												<input type="text" placeholder="XXXX-XXXX-XXXX-XXXX">
+  											<label>Exp Month/Year: </label>
+  												<input type="text" placeholder="MMYY">
+  											</p>
 										<input type="radio" checked="checked" name="sameadr"> Shipping address same as billing<br>
 										<input type="radio">Subscribe to emails Recieve email offers from Stylish Sheets, including upcoming promotions, new products in store, and more!<br>
 									<button type = "submit" value="Submit">Purchase!</button>
-											</div>
+
 										</div>
 								  </form>
 								</div>
-									<div id="checkout">
-									<h3>Checkout Cart</h3>
-										<h4><i class="fas fa-shopping-cart"></i> Cart: 4</h4>
-										<p><a href="#">Watercolour Peony Paper: </a>$15</p>
-										<p><a href="#">Feather Pens Pack: </a>$5</p>
-									<p>Total: <strong>$20</strong></p>
-									<button type = "submit" value="Submit">Continue To Checkout! <i class="fas fa-shopping-cart"></i></button>
-							</div>
+                <div id="checkout">
+                <h3>Checkout Cart</h3>
+                  <h4><i class="fas fa-shopping-cart"></i> Cart: 4</h4>
+                  <p><a href="#">Watercolour Peony Paper: </a>$15</p>
+                  <p><a href="#">Feather Pens Pack: </a>$5</p>
+                <p>Total: <strong>$20</strong></p>
+                <button type = "submit" value="Submit">Continue To Checkout! <i class="fas fa-shopping-cart"></i></button>
+            </div>
 				</section>
 			</div>
 		</div>
