@@ -110,23 +110,6 @@ img {
   margin-right: 1em;
 }
 
-button, button a {
-  display: inline-block;
-  padding: 0.4rem;
-  color: white;
-  border-radius: 4px;
-  /*https://www.w3schools.com/howto/howto_css_round_buttons.asp */
-  background-color: rgb(48, 179, 169);
-  transition-property: background-color;
-  transition-duration: 0.3s;
-  text-decoration: none;
-}
-
-button:hover {
-  background-color: rgb(240, 135, 94);
-  cursor: pointer;
-}
-
 /* https://codepen.io/manabox/pen/raQmpL -------*/
 .cusInput input[type="radio"] {
   /* Removes default radio Input*/
@@ -248,12 +231,23 @@ input[type=search] {
 }
 
 /*------- CLASSES -------*/
+@mixin button-reset {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .button {
+  @include button-reset;
   display: inline-block;
   padding: 0.4rem;
   color: white;
   border-radius: 4px;
   background-color: rgb(48, 179, 169);
+  border: none;
   transition-property: background-color;
   transition-duration: 0.3s;
   text-decoration: none;
