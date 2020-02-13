@@ -245,6 +245,10 @@ input[type=search] {
   cursor: pointer;
 }
 
+.button:focus {
+  background-color: rgb(240, 135, 94);
+}
+
 .button:active {
   background-color: rgb(48, 179, 169);
 }
@@ -278,15 +282,6 @@ input[type=search] {
   border-color: grey;
   border-radius: 5px;
   border-style: solid;
-}
-
-.gallery {
-  /* https://www.w3schools.com/css/css3_images.asp */
-  max-width: 15em;
-}
-
-.gallery a:focus {
-  filter: grayscale(100%);
 }
 
 a img:hover {
