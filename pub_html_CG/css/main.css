@@ -407,6 +407,10 @@ a img:hover {
 	flex-direction:row;
 	max-width:100%;
 	justify-content:flex-start;
+	  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
 }
 
 .container #tableofcontents{
@@ -508,14 +512,6 @@ a img:hover {
 .col-75 {
   padding: 0 16px;
 }
-
-.container {
-  background-color: #f2f2f2;
-  padding: 5px 20px 15px 20px;
-  border: 1px solid lightgrey;
-  border-radius: 3px;
-}
-
 label {
   margin-bottom: 10px;
   display: block;
