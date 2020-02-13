@@ -67,10 +67,6 @@ table, th, td {
   border: 1px solid black;
 }
 
-p {
-  max-width: auto;
-}
-
 img {
   max-width: 15em;
 }
@@ -231,17 +227,8 @@ input[type=search] {
 }
 
 /*------- CLASSES -------*/
-@mixin button-reset {
-  padding: 0;
-  border: none;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
-  cursor: pointer;
-}
 
 .button {
-  @include button-reset;
   display: inline-block;
   padding: 0.4rem;
   color: white;
@@ -371,10 +358,6 @@ a img:hover {
   border-radius: 10px;
   float: left;
   background-color: rgb(164, 245, 238, 0.2);
-}
-
-#tableofcontentsstyling img {
-  max-width: auto;
 }
 
 #title h1 {
