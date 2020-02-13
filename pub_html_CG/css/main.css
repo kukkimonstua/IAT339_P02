@@ -188,15 +188,18 @@ button:hover {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-
+#radio li{
+  list-style-type: none;
+}
 /* Text box input field */
 /* https://www.w3schools.com/css/css_form.asp*/
 input[type=text] {
   width: auto;
   margin-bottom: 20px;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 3px solid #ccc;
   border-radius: 3px;
+  outline: none;
 }
 
 input[type=text]:hover {
