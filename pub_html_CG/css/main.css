@@ -192,7 +192,7 @@ button:hover {
 /* Text box input field */
 /* https://www.w3schools.com/css/css_form.asp*/
 input[type=text] {
-  width: 100%;
+  width: auto;
   margin-bottom: 20px;
   padding: 12px;
   border: 1px solid #ccc;
@@ -285,7 +285,7 @@ input[type=search] {
   background-color: rgb(171, 153, 147);
 }
 
-.nav a {
+.navigation a {
   color: white;
 }
 
@@ -356,6 +356,139 @@ a img:hover {
 #box5 {
   background: #F0875E;
 }
+
+/*IDs*/
+
+#productbrowsingpage{
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	max-width:100%;
+	justify-content:flex-start;
+}
+
+#tableofcontentsstyling{
+	margin:.5em;
+	padding:1em;
+	border:5px solid rgb(171, 153, 147, 0.1);
+  border-radius: 10px;
+	float:left;
+	background-color: rgb(164, 245, 238, 0.2);
+}
+
+#title h1{
+	font-size:5em;
+	padding:0;
+	margin:0;
+}
+
+#styleguide div{
+	padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+#cardinfo{
+	display:block;
+}
+
+/*classes*/
+
+.container #addressinfo, .container #cardinfo{
+	border: 5px groove white;
+	padding:1em;
+	margin:1em;
+}
+
+.container{
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	max-width:100%;
+	justify-content:flex-start;
+}
+
+.container #tableofcontents{
+	flex-basis:15em;
+	flex-grow:1;
+	justify-content:flex-start;
+	max-width:500px;
+	transition-property: background-color;
+	transition-duration: 0.5s;
+}
+
+
+.container #styleguide{
+	flex-basis:15em;
+	flex-grow:1;
+	justify-content:flex-start;
+	margin:.5em;
+	margin-left:3em;
+	padding:1em;
+
+}
+
+/* .navigation{
+	padding:.5em;
+	display: inline;
+	font-size:2em;
+	text-align:right;
+	font-family:'Amatic SC', cursive;
+	color:black;
+	-webkit-appearance:button;
+	-moz-appearance:button;
+	appearance:button;
+	border: 5px solid black;
+    display: inline-block;
+	padding: 0.5rem;
+	text-decoration: none;
+	transition-property: background-color;
+	transition-duration: 0.5s;
+	background-color:#ffb2cf;
+} */
+
+.fas fa-grip-lines-vertical{
+	color:black;
+}
+
+.item{
+	text-align:center;
+	background: rgb(255,255,255);
+	background: radial-gradient(circle, rgba(255,255,255,1) 65%, rgba(255,178,207,1) 100%);
+	padding:.5em;
+	max-width:500px;
+	margin:.5em;
+	box-shadow: 10px 10px 15px grey;
+	border:none;
+}
+
+.item img{
+
+	border:1px solid black;
+}
+
+.item p{
+	max-width:500px;
+}
+
+.quantity{
+	text-align:center;
+}
+
+.cart{
+	cursor:pointer;
+	background-color: #6a8c4b;
+	padding:.5em;
+	color:white;
+	text-decoration:none;
+}
+
+.cart:hover{
+	color: white;
+	text-decoration:underline;
+}
+
 
 /* Checkout */
 /* https://www.w3schools.com/howto/howto_css_checkout_form.asp */
