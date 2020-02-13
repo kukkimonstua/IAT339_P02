@@ -37,10 +37,6 @@ h4 {
   margin-bottom: 0.25rem;
 }
 
-h5 {
-  text-align: center;
-}
-
 hr {
   display: block;
   overflow: hidden;
@@ -53,11 +49,11 @@ table, th, td {
 }
 
 p {
-  max-width: 60%;
+  max-width: auto;
 }
 
 img {
-	max-width: 400px;
+	max-width: 100%;
 }
 
 /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
@@ -380,9 +376,8 @@ a img:hover {
 }
 
 #title h1{
-	font-size:5em;
-	padding:0;
-	margin:0;
+	font-size:2em;
+	/* margin:-1rem; */
 }
 
 #styleguide div{
@@ -417,10 +412,10 @@ a img:hover {
 }
 
 .container #tableofcontents{
-	flex-basis:15em;
+	flex-basis:25em;
 	flex-grow:1;
 	justify-content:flex-start;
-	max-width:500px;
+	max-width:25em;
 	transition-property: background-color;
 	transition-duration: 0.5s;
 }
@@ -438,6 +433,9 @@ a img:hover {
 
 .fas fa-grip-lines-vertical{
 	color:black;
+}
+.fa-quote-left, .fa-quote-right{
+	padding:5px;
 }
 
 .item{
