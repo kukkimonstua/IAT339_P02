@@ -290,24 +290,15 @@ a img:hover {
 }
 
 /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
-#container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.blocks {
-  flex-grow: 1;
-  flex-basis: 15em;
-  height: 200px;
-  margin: 0.5rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  padding: 0.5rem;
-  border-color: white;
+.reviews {
+  margin-top: 2em;
+  border-color: grey;
   border-radius: 10px;
   border-style: solid;
+}
+
+.productdetail {
+  /* text-align: center; */
 }
 
 .stretch {
@@ -369,6 +360,29 @@ a img:hover {
 
 #cardinfo {
   display: block;
+}
+
+#cyantext{
+	color: #97F5E7;
+}
+
+#greentext{
+	color: #0AAD8F;
+}
+
+#orangetext{
+	color: #F0875E;
+}
+
+#browntext{
+	color: #AB9993;
+}
+
+#home div {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
 }
 
 /*classes*/
