@@ -256,19 +256,19 @@ input[type=search] {
   background-color: #AB9993;
 }
 
-.in-text_links ul {
+ul {
   color: black;
 }
 
-.in-text_links a {
+a {
   color: rgb(10, 173, 143);
 }
 
-.in-text_links a:hover {
+a:hover {
   color: rgb(240, 135, 94);
 }
 
-.in-text_links a:focus {
+a:focus {
   background-color: rgb(171, 153, 147);
 }
 
