@@ -1,5 +1,6 @@
-/* imports font family, websafe */
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+/* imports font family, websafe */
+
 
 body {
   font-family: 'Nunito', Verdana, Helvetica, Arial, sans-serif;
@@ -10,8 +11,7 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover; */
-  /* background-color:#464646;
+  background-size: cover;
   /* https://www.w3schools.com/howto/howto_css_center_website.asp */
 }
 
