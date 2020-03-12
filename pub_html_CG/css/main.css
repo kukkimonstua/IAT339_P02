@@ -227,8 +227,7 @@ input[type=search] {
 }
 
 /*------- CLASSES -------*/
-
-.button {
+.button, [type=submit] {
   display: inline-block;
   padding: 0.4rem;
   color: white;
@@ -240,16 +239,16 @@ input[type=search] {
   text-decoration: none;
 }
 
-.button:hover {
+.button:hover, [type=submit]:hover {
   background-color: rgb(240, 135, 94);
   cursor: pointer;
 }
 
-.button:focus {
+.button:focus, [type=submit]:focus{
   background-color: rgb(240, 135, 94);
 }
 
-.button:active {
+.button:active, [type=submit]:active {
   background-color: rgb(48, 179, 169);
 }
 
@@ -257,19 +256,19 @@ input[type=search] {
   background-color: #AB9993;
 }
 
-.in-text_links ul {
+ul {
   color: black;
 }
 
-.in-text_links a {
+a {
   color: rgb(10, 173, 143);
 }
 
-.in-text_links a:hover {
+a:hover {
   color: rgb(240, 135, 94);
 }
 
-.in-text_links a:focus {
+a:focus {
   background-color: rgb(171, 153, 147);
 }
 
@@ -362,20 +361,35 @@ a img:hover {
   display: block;
 }
 
-#cyantext{
-	color: #97F5E7;
+#cyantext {
+  color: #97F5E7;
 }
 
-#greentext{
-	color: #0AAD8F;
+#greentext {
+  color: #0AAD8F;
 }
 
-#orangetext{
-	color: #F0875E;
+#orangetext {
+  color: #F0875E;
 }
 
-#browntext{
-	color: #AB9993;
+#browntext {
+  color: #AB9993;
+}
+
+#homepage {
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+#homepage p ol {
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+#homepage ol {
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 #home div {
@@ -479,29 +493,24 @@ a img:hover {
 /* https://www.w3schools.com/howto/howto_css_checkout_form.asp */
 .row {
   display: -ms-flexbox;
-  /* IE10 */
   display: flex;
   -ms-flex-wrap: wrap;
-  /* IE10 */
   flex-wrap: wrap;
   margin: 0 -16px;
 }
 
 .col-25 {
   -ms-flex: 25%;
-  /* IE10 */
   flex: 25%;
 }
 
 .col-50 {
   -ms-flex: 50%;
-  /* IE10 */
   flex: 50%;
 }
 
 .col-75 {
   -ms-flex: 75%;
-  /* IE10 */
   flex: 75%;
 }
 
@@ -544,7 +553,19 @@ span.price {
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
-@media (max-width: 800px) {
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+
+  .container {
+    padding: 0em;
+    margin: 0em;
+  }
+  .container #addressinfo, .container #cardinfo {
+    margin: 0em;
+  }
+
   .row {
     flex-direction: column-reverse;
   }
@@ -552,4 +573,39 @@ span.price {
   .col-25 {
     margin-bottom: 20px;
   }
+
+  nav a {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .fa-quote-left {
+    padding-right: 8px;
+  }
+
+  #homepage {
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+
+  #homepage ol {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  button {
+    font-size:20px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+	.item{
+		width: 80%;
+	}
+	
+	img{
+		width: 80%;
+	}
+
+	
 }
