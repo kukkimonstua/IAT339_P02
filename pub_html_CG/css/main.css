@@ -6,13 +6,12 @@ body {
   padding: 2rem;
   max-width: 110em;
   margin: auto;
-  background: url(cyan_pens.jpg) center center cover no-repeat fixed;
-  /* background-image: url(images/1.png);
+  background-image: url('../images/1.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover; */
-  /* background-color:#464646; */
+  /* background-color:#464646;
   /* https://www.w3schools.com/howto/howto_css_center_website.asp */
 }
 
